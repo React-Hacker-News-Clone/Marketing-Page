@@ -21,21 +21,21 @@ For data persistence, you'll simply be storing the top 20 news stories on your e
 - Allow users to save stories to their profile for later reading. Bookmarks can be laid out in a nice grid fashion.
 - Remind users about their bookmarks as things start to get stagnent; 'Hey, you may wanna read this'. 
 
-# WEB UI DEVELOPER
+#### WEB UI DEVELOPER
 Michael J Curry
 
-## EB REACT I
+#### WEB REACT I
 Andrew Garcia
 Kiyani Bamba
 Olamide Oredola
 
-## WEB REACT II
+#### WEB REACT II
 Devin Bielejec
 Theodore Ngo
 
-## WEB BACKEND (JAVA)
+#### WEB BACKEND (JAVA)
 Isaiah Francois
 Donald Easter
 
-## PROJECT LEAD
+#### PROJECT LEAD
 Zac Smith
