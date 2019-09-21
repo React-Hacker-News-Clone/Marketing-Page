@@ -1,5 +1,5 @@
 ## PROJECT NAME
-###
+### React Hacker News Clone
 
 ## PITCH
 It's as simple as the title states you're going to clone the hackernews web site but make it look like it belongs in the modern age.
