@@ -1,0 +1,106 @@
+.about-header {
+    justify-content: flex-end;
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .about-us {
+        margin: 0 5vw 0 40vw;
+
+        @media @mobile {
+            margin: 0;
+        }
+    }
+}
+
+.hn-info {
+    height: 16.5rem;
+    width: 49rem;
+    font-size: 2rem;
+    margin: 10vh auto 0 auto;
+    border: 1px solid red;
+
+    @media @mobile {
+        height: 20rem;
+        width: 80vw;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 10rem 0;
+
+    @media @mobile {
+        flex-direction: column;
+        margin: 3rem 0;
+    }
+
+    img {
+        width: 20vh;
+        height: 20vh;
+        min-width: 15rem;
+        min-height: 15rem;
+        margin: 0 5rem;
+        border: 1px solid red;
+
+        @media @mobile {
+            margin: 0;
+        }
+    }
+
+    p {
+        width: 30vw;
+        min-width: 25rem;
+        margin-bottom: 2rem;
+        border: 1px solid green;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0.5rem 0 1rem;
+    }
+}
+
+.even-num .personal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media @mobile {
+        display: inline;
+    }
+}
+
+@media @mobile {
+
+    .whole {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 auto 0 auto;
+        border: 1px solid green;
+    }
+
+    .odd-num {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+
+        .personal-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+}
