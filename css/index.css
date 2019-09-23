@@ -178,8 +178,8 @@ header {
   height: 16.5rem;
   width: 49rem;
   font-size: 2rem;
+  text-align: center;
   margin: 10vh auto 0 auto;
-  border: 1px solid red;
 }
 @media screen and (max-width: 500px) {
   .hn-info {
@@ -218,7 +218,6 @@ header {
   width: 30vw;
   min-width: 25rem;
   margin-bottom: 2rem;
-  border: 1px solid green;
 }
 .team h2 {
   font-size: 2rem;
@@ -234,6 +233,14 @@ header {
   flex-direction: column;
   align-items: flex-end;
 }
+.even-num .personal-content p {
+  text-align: end;
+}
+@media screen and (max-width: 500px) {
+  .even-num .personal-content p {
+    text-align: start;
+  }
+}
 @media screen and (max-width: 500px) {
   .even-num .personal-content {
     display: inline;
@@ -245,7 +252,6 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 0 auto 0 auto;
-    border: 1px solid green;
   }
   .odd-num {
     flex-direction: column-reverse;
@@ -255,6 +261,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+  .odd-num .personal-content p {
+    text-align: end;
   }
 }
 footer {

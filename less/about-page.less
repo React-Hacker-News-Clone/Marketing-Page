@@ -19,8 +19,8 @@
     height: 16.5rem;
     width: 49rem;
     font-size: 2rem;
+    text-align: center;
     margin: 10vh auto 0 auto;
-    border: 1px solid red;
 
     @media @mobile {
         height: 20rem;
@@ -58,7 +58,6 @@
         width: 30vw;
         min-width: 25rem;
         margin-bottom: 2rem;
-        border: 1px solid green;
     }
 
     h2 {
@@ -78,6 +77,14 @@
     flex-direction: column;
     align-items: flex-end;
 
+    p {
+        text-align: end;
+
+        @media @mobile {
+            text-align: start;
+        }
+    }
+
     @media @mobile {
         display: inline;
     }
@@ -90,7 +97,6 @@
         flex-direction: column;
         align-items: center;
         padding: 0 auto 0 auto;
-        border: 1px solid green;
     }
 
     .odd-num {
@@ -101,6 +107,10 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+
+            p {
+                text-align: end;
+            }
         }
     }
 }
