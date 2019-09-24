@@ -30,7 +30,7 @@
         font-weight: 900;
         margin-right: 5rem;
         background: @expanded-card-bg;
-        border: none;
+        border: 1.25px solid black;
         border-radius: 0.8rem;
 
         @media @mobile {
@@ -43,7 +43,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    box-shadow: 0rem 1.6rem 1.6rem 0rem rgba(0,0,0);
+    // box-shadow: 0rem 1.6rem 1.6rem 0rem rgba(0,0,0);
     z-index: 1;
 }
 
@@ -51,14 +51,14 @@
     display: flex;
     justify-content: center;
     width: 100vw;    
-    box-shadow: 0 2rem 5rem rgba(0,0,0,0.8);
+    // box-shadow: 0 2rem 5rem rgba(0,0,0,0.8);
 
     .drop-box {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100vw;
-        margin: 35rem 0 0;
+        margin: 35rem 0 0 9rem;
         padding: 5rem 5rem;
         min-height: auto;
         background: @bg-color;
@@ -67,8 +67,7 @@
 
         @media @mobile {
             flex-direction: column;
-            height: auto;
-            margin: 200rem 0 0; 
+            margin: 200rem 35rem 0 0; 
         }
     }
 }
