@@ -206,7 +206,6 @@ header {
   height: 20vh;
   min-width: 15rem;
   min-height: 15rem;
-  margin: 0 5rem;
   border: 1px solid red;
 }
 @media screen and (max-width: 500px) {
@@ -227,6 +226,12 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0.5rem 0 1rem;
+}
+.even-num img {
+  margin-right: 20rem;
+}
+.odd-num img {
+  margin-left: 20rem;
 }
 .even-num .personal-content {
   display: flex;
