@@ -14,11 +14,80 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    margin-top: 15rem;
+    height: 66vh;
 
-    button {
-        height: 9vh;
-        width: 20vw;
+    .frame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        height: 7rem;
+        margin-bottom: 10rem;
+        overflow: hidden;
+        font-family: @font-family;
+        box-shadow: -0.25rem -0.25rem 1rem rgb(102, 102, 102);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        cursor: pointer;
+    
+        svg {
+            height: 7rem;
+            width: 30rem;
+            fill: none;
+            stroke-width: 8;
+    
+            .o1 {
+                stroke: rgba(rgb(255, 179, 65), 0.7);
+                fill: rgb(255, 161, 20);
+                transition: all 1s ease-in-out;
+            }
+    
+            .o2 {
+                stroke: rgb(255, 255, 255);
+                stroke-dasharray: 20 740;
+                stroke-dashoffset: 20;
+                transition: all 1s ease-in-out;
+            }
+    
+            .o3 {
+                stroke: rgb(255, 255, 255);
+                stroke-dasharray: 20 740;
+                stroke-dashoffset: 20;
+                transition: all 1s ease-in-out;
+            }
+        }
+    
+        span {
+            position: absolute;
+            letter-spacing: 3px;
+
+            a {
+                color: @bg-color;
+                text-decoration: none;
+                font-size: 5rem;
+            }
+        }
+    
+        &:hover {
+            .o1{
+                fill: rgba(rgb(204, 129, 16), 0.3);
+            }
+            
+            .o2 {
+                stroke-dashoffset: -740;
+            }
+            
+            .o3 {
+                stroke-dashoffset: -740;
+            }
+        }
     }
 
     p {

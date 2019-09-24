@@ -143,6 +143,23 @@ html::-webkit-scrollbar-thumb {
   background: #d88300;
   opacity: 0.4;
 }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+}
+nav a {
+  font-size: 4rem;
+  color: #333333;
+  text-decoration: none;
+  box-shadow: -1 -1 white;
+}
+@media screen and (max-width: 500px) {
+  nav a {
+    font-size: 2rem;
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -165,11 +182,68 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  margin-top: 15rem;
+  height: 66vh;
 }
-.cta button {
-  height: 9vh;
-  width: 20vw;
+.cta .frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 7rem;
+  margin-bottom: 10rem;
+  overflow: hidden;
+  font-family: consolas;
+  box-shadow: -0.25rem -0.25rem 1rem #666666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cta .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cta .button svg {
+  height: 7rem;
+  width: 30rem;
+  fill: none;
+  stroke-width: 8;
+}
+.cta .button svg .o1 {
+  stroke: rgba(255, 179, 65, 0.7);
+  fill: #ffa114;
+  transition: all 1s ease-in-out;
+}
+.cta .button svg .o2 {
+  stroke: #ffffff;
+  stroke-dasharray: 20 740;
+  stroke-dashoffset: 20;
+  transition: all 1s ease-in-out;
+}
+.cta .button svg .o3 {
+  stroke: #ffffff;
+  stroke-dasharray: 20 740;
+  stroke-dashoffset: 20;
+  transition: all 1s ease-in-out;
+}
+.cta .button span {
+  position: absolute;
+  letter-spacing: 3px;
+}
+.cta .button span a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 5rem;
+}
+.cta .button:hover .o1 {
+  fill: rgba(204, 129, 16, 0.3);
+}
+.cta .button:hover .o2 {
+  stroke-dashoffset: -740;
+}
+.cta .button:hover .o3 {
+  stroke-dashoffset: -740;
 }
 .cta p {
   font-size: 3rem;
@@ -416,7 +490,8 @@ header {
 .team {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin: 10rem 0;
 }
 @media screen and (max-width: 500px) {
@@ -438,6 +513,9 @@ header {
   }
 }
 .team .personal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url("../img/white-textureb.png");
   border: 5px solid black;
 }
@@ -461,7 +539,7 @@ header {
 }
 .team h3 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 .team p,
 .team h2,
@@ -540,11 +618,11 @@ header {
   }
 }
 footer {
-  height: 20vh;
-  border: 1px solid red;
+  height: 6.4vh;
+  background-image: url("../img/white-textureb.png");
 }
 @media screen and (max-width: 500px) {
   footer {
-    height: 15vh;
+    height: 6vh;
   }
 }
