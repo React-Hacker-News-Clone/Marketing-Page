@@ -167,9 +167,64 @@ header {
   align-items: center;
   height: 70vh;
 }
-.cta button {
-  height: 9vh;
-  width: 20vw;
+.cta .frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 7rem;
+  overflow: hidden;
+  font-family: consolas;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cta .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cta .button svg {
+  height: 7rem;
+  width: 30rem;
+  border-radius: 1rem;
+  fill: none;
+  stroke-width: 8;
+}
+.cta .button svg .o1 {
+  stroke: rgba(255, 179, 65, 0.7);
+  fill: #ffa114;
+  transition: all 1s ease-in-out;
+}
+.cta .button svg .o2 {
+  stroke: #ffffff;
+  stroke-dasharray: 20 740;
+  stroke-dashoffset: 20;
+  transition: all 1s ease-in-out;
+}
+.cta .button svg .o3 {
+  stroke: #ffffff;
+  stroke-dasharray: 20 740;
+  stroke-dashoffset: 20;
+  transition: all 1s ease-in-out;
+}
+.cta .button span {
+  position: absolute;
+  letter-spacing: 3px;
+}
+.cta .button span a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 5rem;
+}
+.cta .button:hover .o1 {
+  fill: rgba(204, 129, 16, 0.3);
+}
+.cta .button:hover .o2 {
+  stroke-dashoffset: -740;
+}
+.cta .button:hover .o3 {
+  stroke-dashoffset: -740;
 }
 .cta p {
   font-size: 3rem;
