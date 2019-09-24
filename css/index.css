@@ -134,10 +134,14 @@ html {
   font-family: consolas;
   font-size: 62.5%;
 }
-header {
-  height: 10vh;
-  background-image: url("../img/white-textureb.png");
-  background-repeat: repeat;
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.8rem;
+  background-color: #333333;
+}
+html::-webkit-scrollbar-thumb {
+  background: #d88300;
+  opacity: 0.4;
 }
 header {
   display: flex;
