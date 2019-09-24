@@ -165,7 +165,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  margin-top: 15rem;
+  height: 66vh;
 }
 .cta .frame {
   display: flex;
@@ -173,8 +174,10 @@ header {
   align-items: center;
   width: 30rem;
   height: 7rem;
+  margin-bottom: 10rem;
   overflow: hidden;
   font-family: consolas;
+  box-shadow: -0.25rem -0.25rem 1rem #666666;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -187,7 +190,6 @@ header {
 .cta .button svg {
   height: 7rem;
   width: 30rem;
-  border-radius: 1rem;
   fill: none;
   stroke-width: 8;
 }
@@ -229,6 +231,28 @@ header {
 .cta p {
   font-size: 3rem;
   margin: 3rem 0 0;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+}
+nav a {
+  font-size: 4rem;
+  color: #333333;
+  text-decoration: none;
+  box-shadow: -1 -1 white;
+}
+@media screen and (max-width: 500px) {
+  nav a {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home-footer {
+    height: 1vh;
+  }
 }
 @media screen and (max-width: 500px) {
   .about-header {
@@ -599,11 +623,11 @@ header {
   }
 }
 footer {
-  height: 20vh;
-  border: 1px solid red;
+  height: 6.4vh;
+  background-image: url("../img/white-textureb.png");
 }
 @media screen and (max-width: 500px) {
   footer {
-    height: 15vh;
+    height: 6vh;
   }
 }
