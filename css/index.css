@@ -143,6 +143,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
+  background-image: url("../img/white-textureb.png");
+  background-repeat: repeat;
 }
 .home-icon {
   height: 8rem;
@@ -305,26 +308,10 @@ header {
   width: 100%;
   text-align: center;
 }
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #iFrancois h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #oOredola h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #kBamba h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #aGarcia h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #tNgo h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry h5 {
+.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev h5 {
   border-right: 2px solid #d88300;
 }
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #iFrancois p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #oOredola p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #kBamba p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #aGarcia p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #tNgo p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry p {
+.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev p {
   border-right: 2px solid #d88300;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith h5,
