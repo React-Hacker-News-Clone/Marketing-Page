@@ -1,16 +1,74 @@
-.about-header {
+// .about-header {
+//     justify-content: flex-end;
+
+.logo {
+    display: flex;
     justify-content: flex-end;
+    width: 60vw;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 35vw;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 4.5rem;
 
     @media @mobile {
-        flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
     }
-    
-    .about-us {
-        margin: 0 5vw 0 40vw;
+
+    .about-us button {
+        width: 13rem;
+        font-size: 2rem;
+        color: @bg-color;
+        font-weight: 900;
+        margin-right: 5rem;
+        background: @expanded-card-bg;
+        border: none;
+        border-radius: 0.8rem;
 
         @media @mobile {
+            font-weight: 600;
             margin: 0;
+        }
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0rem 1.6rem 1.6rem 0rem rgba(0,0,0);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: center;
+    width: 100vw;    
+    box-shadow: 0 2rem 5rem rgba(0,0,0,0.8);
+
+    .drop-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        margin: 35rem 0 0;
+        padding: 5rem 5rem;
+        min-height: auto;
+        background: @bg-color;
+
+        .animated-card(@bg-color, @icon-color, @card-face-color, @expanded-card-bg);
+
+        @media @mobile {
+            flex-direction: column;
+            height: auto;
+            margin: 200rem 0 0; 
         }
     }
 }
