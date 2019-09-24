@@ -9,8 +9,13 @@ html {
   font-size: 62.5%;
 }
 
-header {
-  height: 10vh;
-  background-image: url("../img/white-textureb.png");
-  background-repeat: repeat;
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.8rem;
+  background-color: @bg-color;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: @expanded-card-bg;
+  opacity: 0.4;
 }

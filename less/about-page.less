@@ -103,7 +103,7 @@
         height: 20rem;
         width: 80vw;
         font-size: 2rem;
-        margin-bottom: 5rem;
+        margin: 5vh 0 10vh 0;
     }
 }
 
@@ -119,15 +119,28 @@
     }
 
     img {
-        width: 20vh;
-        height: 20vh;
+        width: 24rem;
+        height: 24rem;
         min-width: 15rem;
         min-height: 15rem;
-        // margin: 0 5rem;
-        border: 1px solid red;
+        border: 5px solid black;
 
         @media @mobile {
             margin: 0;
+        }
+    }
+
+    .personal-content {
+        background-image: @background-texture;
+        border: 5px solid black;
+
+        @media @mobile {
+            margin-top: 2rem;
+            width: 60vw;
+        }
+
+        .title {            
+        height: 6rem;
         }
     }
 
@@ -135,6 +148,7 @@
         width: 30vw;
         min-width: 25rem;
         margin-bottom: 2rem;
+
     }
 
     h2 {
@@ -145,22 +159,43 @@
     h3 {
         font-size: 1.5rem;
         font-weight: bold;
-        margin: 0.5rem 0 1rem;
+    }
+
+    p, h2, h3, a {
+        padding: 0.5rem;
     }
 }
 
 .even-num img {
     margin-right: 20rem;
+
+    @media @mobile {
+        margin: 0;
+    }
 }
 
 .odd-num img {
     margin-left: 20rem;
+
+    @media @mobile {
+        margin: 0;
+    }
 }
 
 .even-num .personal-content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    .title {
+        text-align: end;
+        width: 100%;
+        background-color: rgba(216, 130, 0, 0.205);
+
+        @media @mobile {
+            text-align: start;
+        }
+    }
 
     p {
         text-align: end;
@@ -175,13 +210,20 @@
     }
 }
 
+.odd-num .personal-content {
+
+    .title {
+        width: 100%;
+        background-color: rgba(216, 130, 0, 0.205);
+    }
+}
+
 @media @mobile {
 
     .whole {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 auto 0 auto;
     }
 
     .odd-num {
@@ -192,6 +234,10 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+
+            .title {
+                text-align: end;
+            }
 
             p {
                 text-align: end;

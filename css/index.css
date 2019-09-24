@@ -134,15 +134,28 @@ html {
   font-family: consolas;
   font-size: 62.5%;
 }
-header {
-  height: 10vh;
-  background-image: url("../img/white-textureb.png");
-  background-repeat: repeat;
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.8rem;
+  background-color: #333333;
+}
+html::-webkit-scrollbar-thumb {
+  background: #d88300;
+  opacity: 0.4;
 }
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
+  background-image: url("../img/white-textureb.png");
+  background-repeat: repeat;
+}
+#home {
+  background-image: url("../img/bg-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 .home-icon {
   height: 8rem;
@@ -305,26 +318,10 @@ header {
   width: 100%;
   text-align: center;
 }
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #iFrancois h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #oOredola h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #kBamba h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #aGarcia h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #tNgo h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry h5 {
+.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev h5 {
   border-right: 2px solid #d88300;
 }
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #iFrancois p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #oOredola p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #kBamba p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #aGarcia p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #tNgo p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry p {
+.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev p {
   border-right: 2px solid #d88300;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith h5,
@@ -413,7 +410,7 @@ header {
     height: 20rem;
     width: 80vw;
     font-size: 2rem;
-    margin-bottom: 5rem;
+    margin: 5vh 0 10vh 0;
   }
 }
 .team {
@@ -429,16 +426,29 @@ header {
   }
 }
 .team img {
-  width: 20vh;
-  height: 20vh;
+  width: 24rem;
+  height: 24rem;
   min-width: 15rem;
   min-height: 15rem;
-  border: 1px solid red;
+  border: 5px solid black;
 }
 @media screen and (max-width: 500px) {
   .team img {
     margin: 0;
   }
+}
+.team .personal-content {
+  background-image: url("../img/white-textureb.png");
+  border: 5px solid black;
+}
+@media screen and (max-width: 500px) {
+  .team .personal-content {
+    margin-top: 2rem;
+    width: 60vw;
+  }
+}
+.team .personal-content .title {
+  height: 6rem;
 }
 .team p {
   width: 30vw;
@@ -452,18 +462,43 @@ header {
 .team h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 0.5rem 0 1rem;
+}
+.team p,
+.team h2,
+.team h3,
+.team a {
+  padding: 0.5rem;
 }
 .even-num img {
   margin-right: 20rem;
 }
+@media screen and (max-width: 500px) {
+  .even-num img {
+    margin: 0;
+  }
+}
 .odd-num img {
   margin-left: 20rem;
+}
+@media screen and (max-width: 500px) {
+  .odd-num img {
+    margin: 0;
+  }
 }
 .even-num .personal-content {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+.even-num .personal-content .title {
+  text-align: end;
+  width: 100%;
+  background-color: rgba(216, 130, 0, 0.205);
+}
+@media screen and (max-width: 500px) {
+  .even-num .personal-content .title {
+    text-align: start;
+  }
 }
 .even-num .personal-content p {
   text-align: end;
@@ -478,12 +513,15 @@ header {
     display: inline;
   }
 }
+.odd-num .personal-content .title {
+  width: 100%;
+  background-color: rgba(216, 130, 0, 0.205);
+}
 @media screen and (max-width: 500px) {
   .whole {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 auto 0 auto;
   }
   .odd-num {
     flex-direction: column-reverse;
@@ -493,6 +531,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+  .odd-num .personal-content .title {
+    text-align: end;
   }
   .odd-num .personal-content p {
     text-align: end;
