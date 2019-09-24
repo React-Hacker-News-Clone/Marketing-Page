@@ -135,13 +135,7 @@ html {
   font-size: 62.5%;
 }
 html::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.8rem;
-  background-color: #333333;
-}
-html::-webkit-scrollbar-thumb {
-  background: #d88300;
-  opacity: 0.4;
+  display: none;
 }
 nav {
   display: flex;
@@ -173,6 +167,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  height: 100vh;
 }
 .home-icon {
   height: 8rem;
@@ -618,8 +613,9 @@ header {
   }
 }
 footer {
-  height: 6.4vh;
   background-image: url("../img/white-textureb.png");
+  height: 8vh;
+  width: 100vw;
 }
 @media screen and (max-width: 500px) {
   footer {
