@@ -143,6 +143,23 @@ html::-webkit-scrollbar-thumb {
   background: #d88300;
   opacity: 0.4;
 }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+}
+nav a {
+  font-size: 4rem;
+  color: #333333;
+  text-decoration: none;
+  box-shadow: -1 -1 white;
+}
+@media screen and (max-width: 500px) {
+  nav a {
+    font-size: 2rem;
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -231,28 +248,6 @@ header {
 .cta p {
   font-size: 3rem;
   margin: 3rem 0 0;
-}
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 1.5rem 0 0;
-  padding-top: 1rem;
-}
-nav a {
-  font-size: 4rem;
-  color: #333333;
-  text-decoration: none;
-  box-shadow: -1 -1 white;
-}
-@media screen and (max-width: 500px) {
-  nav a {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .home-footer {
-    height: 1vh;
-  }
 }
 @media screen and (max-width: 500px) {
   .about-header {
