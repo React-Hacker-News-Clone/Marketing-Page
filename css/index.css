@@ -416,7 +416,8 @@ header {
 .team {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin: 10rem 0;
 }
 @media screen and (max-width: 500px) {
@@ -438,6 +439,9 @@ header {
   }
 }
 .team .personal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url("../img/white-textureb.png");
   border: 5px solid black;
 }
@@ -461,7 +465,7 @@ header {
 }
 .team h3 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 .team p,
 .team h2,
