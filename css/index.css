@@ -260,6 +260,10 @@ header {
   fill: #cc8110;
   transition: linear;
 }
+#about {
+  background-image: url("../img/brick-bg.png");
+  background-repeat: repeat;
+}
 @media screen and (max-width: 500px) {
   .about-header {
     flex-direction: column;
