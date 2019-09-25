@@ -142,7 +142,7 @@ html::-webkit-scrollbar {
 nav {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 nav a {
   font-size: 3rem;
@@ -171,13 +171,6 @@ header {
     height: 6vh;
   }
 }
-#home {
-  background-image: url("../img/bg-home.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  height: 100vh;
-}
 .home-icon {
   height: 8rem;
 }
@@ -186,8 +179,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 15rem;
-  height: 66vh;
+  height: 82vh;
+  background-image: url("../img/bg-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center center;
 }
 .cta .frame {
   display: flex;
@@ -265,6 +261,7 @@ header {
 #about {
   background-image: url("../img/brick-bg.png");
   background-repeat: repeat;
+  background-size: cover;
 }
 #about #about-nav {
   background-color: #343a40;
