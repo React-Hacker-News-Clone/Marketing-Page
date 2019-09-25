@@ -5,7 +5,7 @@
         height: auto;
     }
 
-    .logo {
+    .home-icon {
         display: flex;
         justify-content: flex-end;
         width: 58vw;
@@ -72,11 +72,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             width: 100vw;
             margin: 59rem 0 0 10rem;
             padding: 5rem 5rem;
-            // min-height: auto;
             background: @bg-color;
 
             .animated-card(@bg-color, @icon-color, @card-face-color, @expanded-card-bg);
@@ -96,16 +94,16 @@
 }
 
 .hn-info {
-    height: 16.5rem;
-    width: 49rem;
     font-size: 2rem;
     text-align: center;
+    height: 16.5rem;
+    width: 49rem;
     margin: 10vh auto 0 auto;
 
     @media @mobile {
+        font-size: 2rem;
         height: 20rem;
         width: 80vw;
-        font-size: 2rem;
         margin: 5vh 0 10vh 0;
     }
 }

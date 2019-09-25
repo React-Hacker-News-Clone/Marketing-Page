@@ -1,33 +1,46 @@
 .wrapper {
-        width: 100vw;
-        height: 82vh;
-        padding: 15rem;
-        background-image: url("../img/keyboard.jpeg");
-        background-size: cover;
+    width: 100vw;
+    height: 82vh;
+    padding: 15rem;
+    background-image: url("../img/keyboard.jpeg");
+    background-size: cover;
 
-        .form {
-            text-align: center;
-            box-shadow: 0 0 6rem 0.5rem #AAA;
-            border-radius: 1rem;
-            width: 62rem;
-            height: 33rem;
-            margin: 0 auto;
-            padding: 1rem 1rem;
-            background-image: @background-texture;
+    .form {
+        text-align: center;
+        box-shadow: 0 0 6rem 0.5rem #AAA;
+        border-radius: 1rem;
+        width: 35vw;
+        height: 33rem;
+        margin: 0 auto;
+        padding: 1rem 1rem;
+        background-image: @background-texture;
+
+        @media @mobile {
+            width: 70vw;
+            transform: translateX(-25%);
         }
     }
+}
 
 .name { 
     background-color: @bg-color;
     border-bottom: 0.5rem solid rgb(17, 17, 17);
     color: white;
     height: 4rem;
-    width: 30rem;
+    width: 16vw;
+
+    @media @mobile {
+        width: 32vw;
+    }
 
     &:hover{
         background-color: @expanded-card-bg;
         border-bottom: 0.5rem solid rgb(150, 90, 0);
-        width: 60rem;
+        width: 32vw;
+
+        @media @mobile {
+            width: 64vw;
+        }
     }
 }
 
@@ -35,12 +48,20 @@
     background-color: @expanded-card-bg;
     border-bottom: 0.5rem solid rgb(150, 90, 0);
     height: 4rem;
-    width: 30rem;
+    width: 16vw;
+
+    @media @mobile {
+        width: 32vw;
+    }
 
     &:hover {
         background-color: @bg-color;
         border-bottom: 0.5rem solid rgb(17, 17, 17);
-        width: 60rem;
+        width: 32vw;
+
+        @media @mobile {
+            width: 64vw;
+        }
     }
 }
 
@@ -49,12 +70,20 @@
     border-bottom: 0.5rem solid rgb(17, 17, 17);
     overflow: hidden;
     height: 11rem;
-    width: 30rem;
+    width: 16vw;
+
+    @media @mobile {
+        width: 32vw;
+    }
 
     &:hover {
         background-color: @expanded-card-bg;
         border-bottom: 0.5rem solid rgb(150, 90, 0);
-        width: 60rem;
+        width: 32vw;
+
+        @media @mobile {
+            width: 64vw;
+        }
     }
 }
 
@@ -68,10 +97,6 @@
     &:hover {
         box-shadow: 0 0 6rem 0.5rem rgba(78, 72, 77, 0.219);
     }
-}
-
-.form .submit:focus {
-    box-shadow: 0 0 6rem 0.5rem rgba(78, 72, 77, 0.219);
 }
 
 .entry{
