@@ -1,7 +1,6 @@
 #about {
     background-image: url("../img/brick-bg.png");
     background-repeat: repeat;
-    background-size: cover;
 
     #about-nav {
     background-color: #343a40;
@@ -205,6 +204,17 @@
 
     p, h2, h3, a {
         padding: 0.5rem;
+    }
+
+    a {
+        font-size: 2rem;
+        color: rgb(146, 146, 146);
+        text-decoration: none;
+        text-shadow: -0.5px 0.5px black, 0.5px 0.5px black, 0.5px 0.5px black, 0.5px -0.5px black;
+
+        &:hover {
+            color: @expanded-card-bg;
+        }
     }
 }
 
