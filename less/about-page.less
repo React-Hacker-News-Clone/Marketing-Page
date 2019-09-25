@@ -21,6 +21,11 @@
         bottom: 3rem;
         right: 5rem;
 
+        @media @mobile {
+            bottom: 1rem;
+            right: 0;
+        }
+
         a {
             color: @bg-color;
             text-decoration: none;
@@ -31,26 +36,27 @@
 }
 
 .about-header {
+    display: flex;
+    justify-content: flex-end;
 
     @media @mobile {
+        align-items: center;
         flex-direction: column;
         height: auto;
     }
 
-    .home-icon {
-        display: flex;
-        justify-content: flex-end;
-        width: 58vw;
+    #home-icon{
 
         @media @mobile {
-            justify-content: center;
+            width: 95vw;
+            margin-left: 3rem;
         }
 
-        img {
+        a {
             height: 8rem;
 
-            @media @mobile {
-                margin-top: 3rem;
+                @media @mobile {
+                margin-top: 2rem;
             }
         }
     }

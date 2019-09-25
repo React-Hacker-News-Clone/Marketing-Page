@@ -171,7 +171,7 @@ header {
   background-repeat: repeat;
 }
 @media screen and (max-width: 500px) {
-  header .home-icon {
+  header #home-icon {
     width: 60vw;
     height: 6vh;
   }
@@ -285,34 +285,41 @@ header {
   bottom: 3rem;
   right: 5rem;
 }
+@media screen and (max-width: 500px) {
+  #about #to-top {
+    bottom: 1rem;
+    right: 0;
+  }
+}
 #about #to-top a {
   color: #333333;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bolder;
 }
+.about-header {
+  display: flex;
+  justify-content: flex-end;
+}
 @media screen and (max-width: 500px) {
   .about-header {
+    align-items: center;
     flex-direction: column;
     height: auto;
   }
 }
-.about-header .home-icon {
-  display: flex;
-  justify-content: flex-end;
-  width: 58vw;
-}
 @media screen and (max-width: 500px) {
-  .about-header .home-icon {
-    justify-content: center;
+  .about-header #home-icon {
+    width: 95vw;
+    margin-left: 3rem;
   }
 }
-.about-header .home-icon img {
+.about-header #home-icon a {
   height: 8rem;
 }
 @media screen and (max-width: 500px) {
-  .about-header .home-icon img {
-    margin-top: 3rem;
+  .about-header #home-icon a {
+    margin-top: 2rem;
   }
 }
 .top-bar {
