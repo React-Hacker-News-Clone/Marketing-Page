@@ -142,10 +142,10 @@ html::-webkit-scrollbar {
 nav {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 nav a {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #333333;
   text-decoration: none;
   box-shadow: -1 -1 white;
@@ -191,12 +191,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30rem;
-  height: 7rem;
+  width: 100rem;
+  height: 50rem;
   margin-bottom: 10rem;
   overflow: hidden;
   font-family: consolas;
-  box-shadow: -0.25rem -0.25rem 1rem #666666;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -205,9 +204,11 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-shadow: -0.25rem -0.25rem 1rem #666666;
+  transition: all 0.5s ease 0s;
 }
 .cta .button svg {
-  height: 7rem;
+  height: 10rem;
   width: 30rem;
   fill: none;
   stroke-width: 8;
@@ -219,13 +220,13 @@ header {
 }
 .cta .button svg .o2 {
   stroke: #ffffff;
-  stroke-dasharray: 20 740;
+  stroke-dasharray: 20 800;
   stroke-dashoffset: 20;
   transition: all 1s ease-in-out;
 }
 .cta .button svg .o3 {
   stroke: #ffffff;
-  stroke-dasharray: 20 740;
+  stroke-dasharray: 20 800;
   stroke-dashoffset: 20;
   transition: all 1s ease-in-out;
 }
@@ -238,14 +239,27 @@ header {
   text-decoration: none;
   font-size: 5rem;
 }
+.cta .button:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 1rem 1rem 1.5rem 0.5rem black;
+}
 .cta .button:hover .o1 {
   fill: rgba(204, 129, 16, 0.3);
 }
 .cta .button:hover .o2 {
-  stroke-dashoffset: -740;
+  stroke-dashoffset: -800;
 }
 .cta .button:hover .o3 {
-  stroke-dashoffset: -740;
+  stroke-dashoffset: -800;
+}
+.cta .button:active {
+  transform: translate(1rem, 1rem);
+  box-shadow: 0 0 5rem 0.5rem white;
+  transition: all 0.2s ease 0s;
+}
+.cta .button:active .o1 {
+  fill: #cc8110;
+  transition: linear;
 }
 @media screen and (max-width: 500px) {
   .about-header {
