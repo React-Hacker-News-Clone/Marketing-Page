@@ -146,12 +146,17 @@ nav {
 }
 nav a {
   font-size: 3rem;
+  margin-top: 0.75rem;
   color: #929292;
   text-decoration: none;
+}
+nav a:hover {
+  color: #d88300;
 }
 @media screen and (max-width: 500px) {
   nav a {
     font-size: 2rem;
+    margin-top: 1rem;
   }
 }
 nav #active-nav {
@@ -261,7 +266,6 @@ header {
 #about {
   background-image: url("../img/brick-bg.png");
   background-repeat: repeat;
-  background-size: cover;
 }
 #about #about-nav {
   background-color: #343a40;
@@ -588,6 +592,15 @@ header {
 .team a {
   padding: 0.5rem;
 }
+.team a {
+  font-size: 2rem;
+  color: #929292;
+  text-decoration: none;
+  text-shadow: -0.5px 0.5px black, 0.5px 0.5px black, 0.5px 0.5px black, 0.5px -0.5px black;
+}
+.team a:hover {
+  color: #d88300;
+}
 .even-num img {
   margin-right: 20rem;
 }
@@ -782,9 +795,4 @@ footer {
   background-color: #343a40;
   height: 8vh;
   width: 100%;
-}
-@media screen and (max-width: 500px) {
-  footer {
-    height: 6vh;
-  }
 }
