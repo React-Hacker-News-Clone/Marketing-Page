@@ -146,14 +146,16 @@ nav {
 }
 nav a {
   font-size: 3rem;
-  color: #333333;
+  color: #929292;
   text-decoration: none;
-  box-shadow: -1 -1 white;
 }
 @media screen and (max-width: 500px) {
   nav a {
     font-size: 2rem;
   }
+}
+nav #active-nav {
+  color: white;
 }
 header {
   display: flex;
@@ -233,10 +235,10 @@ header {
   position: absolute;
   letter-spacing: 3px;
 }
-.cta .button span a {
+.cta .button span p {
   color: #333333;
   text-decoration: none;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .cta .button:hover {
   transform: translate(-1rem, -1rem);
@@ -263,6 +265,11 @@ header {
 #about {
   background-image: url("../img/brick-bg.png");
   background-repeat: repeat;
+}
+#about #about-nav {
+  background-color: #343a40;
+  height: 8vh;
+  width: 100%;
 }
 @media screen and (max-width: 500px) {
   .about-header {
@@ -755,7 +762,7 @@ header {
   font-size: 2rem;
 }
 footer {
-  background-image: url("../img/white-textureb.png");
+  background-color: #343a40;
   height: 8vh;
   width: 100%;
 }
