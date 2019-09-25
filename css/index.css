@@ -331,6 +331,7 @@ header {
   .dropdown .about-us button {
     font-weight: 600;
     margin: 0;
+    transform: translateY(13rem);
   }
 }
 .dropdown:hover .dropdown-content {
