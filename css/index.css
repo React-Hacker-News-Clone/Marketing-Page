@@ -271,6 +271,25 @@ header {
   height: 8vh;
   width: 100%;
 }
+#about #to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 10rem;
+  background-color: #d88300;
+  border: 1.5px solid #333333;
+  border-radius: 0.6rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 5rem;
+}
+#about #to-top a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
 @media screen and (max-width: 500px) {
   .about-header {
     flex-direction: column;
