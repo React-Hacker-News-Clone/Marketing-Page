@@ -204,7 +204,6 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: -0.25rem -0.25rem 1rem #666666;
   transition: all 0.5s ease 0s;
 }
 .cta .button svg {
@@ -241,7 +240,7 @@ header {
 }
 .cta .button:hover {
   transform: translate(-1rem, -1rem);
-  box-shadow: 1rem 1rem 1.5rem 0.5rem black;
+  box-shadow: 1rem 1rem 1.5rem 0.5rem #1b1b1b;
 }
 .cta .button:hover .o1 {
   fill: rgba(204, 129, 16, 0.3);
@@ -254,7 +253,7 @@ header {
 }
 .cta .button:active {
   transform: translate(1rem, 1rem);
-  box-shadow: 0 0 5rem 0.5rem white;
+  box-shadow: 0 0 15rem #d88300, 0 0 20rem white;
   transition: all 0.2s ease 0s;
 }
 .cta .button:active .o1 {
