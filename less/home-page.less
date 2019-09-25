@@ -22,12 +22,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30rem;
-        height: 7rem;
+        width: 100rem;
+        height: 50rem;
         margin-bottom: 10rem;
         overflow: hidden;
         font-family: @font-family;
-        box-shadow: -0.25rem -0.25rem 1rem rgb(102, 102, 102);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -37,9 +36,10 @@
         align-items: center;
         justify-content: center;        
         cursor: pointer;
+        transition: all 0.5s ease 0s;
     
         svg {
-            height: 7rem;
+            height: 10rem;
             width: 30rem;
             fill: none;
             stroke-width: 8;
@@ -52,14 +52,14 @@
     
             .o2 {
                 stroke: rgb(255, 255, 255);
-                stroke-dasharray: 20 740;
+                stroke-dasharray: 20 800;
                 stroke-dashoffset: 20;
                 transition: all 1s ease-in-out;
             }
     
             .o3 {
                 stroke: rgb(255, 255, 255);
-                stroke-dasharray: 20 740;
+                stroke-dasharray: 20 800;
                 stroke-dashoffset: 20;
                 transition: all 1s ease-in-out;
             }
@@ -77,16 +77,30 @@
         }
     
         &:hover {
+            transform: translate(-1rem, -1rem);
+            box-shadow: 1rem 1rem 1.5rem 0.5rem rgb(27, 27, 27);
+
             .o1{
                 fill: rgba(rgb(204, 129, 16), 0.3);
             }
             
             .o2 {
-                stroke-dashoffset: -740;
+                stroke-dashoffset: -800;
             }
             
             .o3 {
-                stroke-dashoffset: -740;
+                stroke-dashoffset: -800;
+            }
+        }
+
+        &:active {
+            transform: translate(1rem, 1rem);
+            box-shadow: 0 0 15rem @expanded-card-bg, 0 0 20rem white;
+            transition: all 0.2s ease 0s;
+
+            .o1{
+                fill: rgb(204, 129, 16);
+                transition: linear;
             }
         }
     }
