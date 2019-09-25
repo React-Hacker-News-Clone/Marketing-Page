@@ -21,6 +21,7 @@
     background-color: @bg-color;
     border-bottom: 0.5rem solid rgb(17, 17, 17);
     color: white;
+    height: 4rem;
     width: 30rem;
 
     &:hover{
@@ -33,7 +34,7 @@
 .email {
     background-color: @expanded-card-bg;
     border-bottom: 0.5rem solid rgb(150, 90, 0);
-    height: 5rem;
+    height: 4rem;
     width: 30rem;
 
     &:hover {
@@ -47,7 +48,7 @@
     background-color: @bg-color;
     border-bottom: 0.5rem solid rgb(17, 17, 17);
     overflow: hidden;
-    height: 10rem;
+    height: 11rem;
     width: 30rem;
 
     &:hover {
@@ -60,15 +61,17 @@
 .submit{
     border-radius: 0.5rem;
     padding: 1rem;
-    // color: @bg-color;
     border: none;
     border-bottom: 0.5rem solid rgb(17, 17, 17);
     transform: translateY(-60px);
     
     &:hover {
-        // border-bottom: 0.5rem solid rgb(17, 17, 17);
         box-shadow: 0 0 6rem 0.5rem rgba(78, 72, 77, 0.219);
     }
+}
+
+.form .submit:focus {
+    box-shadow: 0 0 6rem 0.5rem rgba(78, 72, 77, 0.219);
 }
 
 .entry{
@@ -78,17 +81,7 @@
     border-radius: 0.5rem;
     border: none;
     transition: all 0.5s ease 0s;
-    box-shadow: 0 0 1.5rem 0.2rem #AAA;
-}
-
-.shadow {
-    box-shadow: 0 0 6rem 0.5rem #AAA;
-    opacity: 0.5;
-    border-radius: 10rem;
-    width: 50%;
-    margin: 5rem auto 0 auto;
-    padding: 0 2rem;
-    animation: shadow 1.5s infinite;
+    box-shadow: 0 0 2rem 0.2rem #AAA;
 }
 
 .submit{
@@ -99,16 +92,6 @@
     background-color: @expanded-card-bg;
     border-bottom: 0.5rem solid rgb(150, 90, 0);
     margin-top: 15rem;
-}
-
-@keyframes shadow{
-    0%{
-      
-    }
-    50%{
-      opacity: 0.8;
-      width: 50%;
-    }
 }
 
 ::-webkit-input-placeholder{

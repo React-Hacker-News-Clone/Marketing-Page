@@ -133,6 +133,7 @@ table {
 html {
   font-family: consolas;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -206,7 +207,7 @@ header {
 }
 .cta .button svg .o1 {
   stroke: rgba(255, 179, 65, 0.7);
-  fill: #ffa114;
+  fill: #d88300;
   transition: all 1s ease-in-out;
 }
 .cta .button svg .o2 {
@@ -238,10 +239,6 @@ header {
 }
 .cta .button:hover .o3 {
   stroke-dashoffset: -740;
-}
-.cta p {
-  font-size: 3rem;
-  margin: 3rem 0 0;
 }
 @media screen and (max-width: 500px) {
   .about-header {
@@ -290,11 +287,11 @@ header {
   }
 }
 .dropdown .about-us button {
-  width: 13rem;
   font-size: 2rem;
   color: #333333;
   font-weight: 900;
   margin-right: 5rem;
+  width: 13rem;
   background: #d88300;
   border: 1.25px solid black;
   border-radius: 0.8rem;
@@ -304,11 +301,6 @@ header {
     font-weight: 600;
     margin: 0;
   }
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
@@ -322,7 +314,6 @@ header {
   width: 100vw;
   margin: 59rem 0 0 10rem;
   padding: 5rem 5rem;
-  min-height: auto;
   background: #333333;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container {
@@ -465,6 +456,11 @@ header {
     flex-direction: column;
     margin: 216rem 0 0;
   }
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
 }
 .hn-info {
   height: 16.5rem;
@@ -632,6 +628,7 @@ header {
   background-color: #333333;
   border-bottom: 0.5rem solid #111111;
   color: white;
+  height: 4rem;
   width: 30rem;
 }
 .name:hover {
@@ -642,7 +639,7 @@ header {
 .email {
   background-color: #d88300;
   border-bottom: 0.5rem solid #965a00;
-  height: 5rem;
+  height: 4rem;
   width: 30rem;
 }
 .email:hover {
@@ -654,7 +651,7 @@ header {
   background-color: #333333;
   border-bottom: 0.5rem solid #111111;
   overflow: hidden;
-  height: 10rem;
+  height: 11rem;
   width: 30rem;
 }
 .message:hover {
@@ -672,6 +669,9 @@ header {
 .submit:hover {
   box-shadow: 0 0 6rem 0.5rem rgba(78, 72, 77, 0.219);
 }
+.form .submit:focus {
+  box-shadow: 0 0 6rem 0.5rem rgba(78, 72, 77, 0.219);
+}
 .entry {
   display: block;
   margin: 3rem auto;
@@ -679,16 +679,7 @@ header {
   border-radius: 0.5rem;
   border: none;
   transition: all 0.5s ease 0s;
-  box-shadow: 0 0 1.5rem 0.2rem #AAA;
-}
-.shadow {
-  box-shadow: 0 0 6rem 0.5rem #AAA;
-  opacity: 0.5;
-  border-radius: 10rem;
-  width: 50%;
-  margin: 5rem auto 0 auto;
-  padding: 0 2rem;
-  animation: shadow 1.5s infinite;
+  box-shadow: 0 0 2rem 0.2rem #AAA;
 }
 .submit {
   border-radius: 0.5rem;
@@ -699,12 +690,6 @@ header {
   border-bottom: 0.5rem solid #965a00;
   margin-top: 15rem;
 }
-@keyframes shadow {
-  50% {
-    opacity: 0.8;
-    width: 50%;
-  }
-}
 ::-webkit-input-placeholder {
   color: white;
   font-size: 2rem;
@@ -712,7 +697,7 @@ header {
 footer {
   background-image: url("../img/white-textureb.png");
   height: 8vh;
-  width: 100vw;
+  width: 100%;
 }
 @media screen and (max-width: 500px) {
   footer {
