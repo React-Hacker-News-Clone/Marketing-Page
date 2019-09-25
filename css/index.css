@@ -140,7 +140,6 @@ html::-webkit-scrollbar {
 nav {
   display: flex;
   justify-content: space-evenly;
-  margin: 1.5rem 0 0;
   padding-top: 1rem;
 }
 nav a {
@@ -611,6 +610,104 @@ header {
   .odd-num .personal-content p {
     text-align: end;
   }
+}
+.wrapper {
+  width: 100vw;
+  height: 82vh;
+  padding: 15rem;
+  background-image: url("../img/keyboard.jpeg");
+  background-size: cover;
+}
+.wrapper .form {
+  text-align: center;
+  box-shadow: 0 0 6rem 0.5rem #AAA;
+  border-radius: 1rem;
+  width: 62rem;
+  height: 33rem;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  background-image: url("../img/white-textureb.png");
+}
+.name {
+  background-color: #333333;
+  border-bottom: 0.5rem solid #111111;
+  color: white;
+  width: 30rem;
+}
+.name:hover {
+  background-color: #d88300;
+  border-bottom: 0.5rem solid #965a00;
+  width: 60rem;
+}
+.email {
+  background-color: #d88300;
+  border-bottom: 0.5rem solid #965a00;
+  height: 5rem;
+  width: 30rem;
+}
+.email:hover {
+  background-color: #333333;
+  border-bottom: 0.5rem solid #111111;
+  width: 60rem;
+}
+.message {
+  background-color: #333333;
+  border-bottom: 0.5rem solid #111111;
+  overflow: hidden;
+  height: 10rem;
+  width: 30rem;
+}
+.message:hover {
+  background-color: #d88300;
+  border-bottom: 0.5rem solid #965a00;
+  width: 60rem;
+}
+.submit {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: 0.5rem solid #111111;
+  transform: translateY(-60px);
+}
+.submit:hover {
+  box-shadow: 0 0 6rem 0.5rem rgba(78, 72, 77, 0.219);
+}
+.entry {
+  display: block;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0 0 1.5rem 0.2rem #AAA;
+}
+.shadow {
+  box-shadow: 0 0 6rem 0.5rem #AAA;
+  opacity: 0.5;
+  border-radius: 10rem;
+  width: 50%;
+  margin: 5rem auto 0 auto;
+  padding: 0 2rem;
+  animation: shadow 1.5s infinite;
+}
+.submit {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 15rem;
+  color: white;
+  background-color: #d88300;
+  border-bottom: 0.5rem solid #965a00;
+  margin-top: 15rem;
+}
+@keyframes shadow {
+  50% {
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 2rem;
 }
 footer {
   background-image: url("../img/white-textureb.png");
