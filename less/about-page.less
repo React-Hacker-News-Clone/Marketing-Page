@@ -5,7 +5,7 @@
         height: auto;
     }
 
-    .logo {
+    .home-icon {
         display: flex;
         justify-content: flex-end;
         width: 58vw;
@@ -46,11 +46,13 @@
     }
 
     .about-us button {
-        width: 13rem;
         font-size: 2rem;
         color: @bg-color;
         font-weight: 900;
+
         margin-right: 5rem;
+        width: 13rem;
+
         background: @expanded-card-bg;
         border: 1.25px solid black;
         border-radius: 0.8rem;
@@ -58,6 +60,29 @@
         @media @mobile {
             font-weight: 600;
             margin: 0;
+        }
+    }
+
+    &:hover .dropdown-content {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+
+        .drop-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+            margin: 59rem 0 0 10rem;
+            padding: 5rem 5rem;
+            background: @bg-color;
+
+            .animated-card(@bg-color, @icon-color, @card-face-color, @expanded-card-bg);
+
+            @media @mobile {
+                flex-direction: column;
+                margin: 216rem 0 0; 
+            }
         }
     }
 }
@@ -68,41 +93,17 @@
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-
-    .drop-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100vw;
-        margin: 59rem 0 0 10rem;
-        padding: 5rem 5rem;
-        min-height: auto;
-        background: @bg-color;
-
-        .animated-card(@bg-color, @icon-color, @card-face-color, @expanded-card-bg);
-
-        @media @mobile {
-            flex-direction: column;
-            margin: 216rem 0 0; 
-        }
-    }
-}
-
 .hn-info {
-    height: 16.5rem;
-    width: 49rem;
     font-size: 2rem;
     text-align: center;
+    height: 16.5rem;
+    width: 49rem;
     margin: 10vh auto 0 auto;
 
     @media @mobile {
+        font-size: 2rem;
         height: 20rem;
         width: 80vw;
-        font-size: 2rem;
         margin: 5vh 0 10vh 0;
     }
 }

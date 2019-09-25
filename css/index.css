@@ -133,6 +133,8 @@ table {
 html {
   font-family: consolas;
   font-size: 62.5%;
+  overflow-x: hidden;
+  height: 82vh;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -160,6 +162,12 @@ header {
   height: 10vh;
   background-image: url("../img/white-textureb.png");
   background-repeat: repeat;
+}
+@media screen and (max-width: 500px) {
+  header .home-icon {
+    width: 60vw;
+    height: 6vh;
+  }
 }
 #home {
   background-image: url("../img/bg-home.jpg");
@@ -206,7 +214,7 @@ header {
 }
 .cta .button svg .o1 {
   stroke: rgba(255, 179, 65, 0.7);
-  fill: #ffa114;
+  fill: #d88300;
   transition: all 1s ease-in-out;
 }
 .cta .button svg .o2 {
@@ -239,31 +247,27 @@ header {
 .cta .button:hover .o3 {
   stroke-dashoffset: -740;
 }
-.cta p {
-  font-size: 3rem;
-  margin: 3rem 0 0;
-}
 @media screen and (max-width: 500px) {
   .about-header {
     flex-direction: column;
     height: auto;
   }
 }
-.about-header .logo {
+.about-header .home-icon {
   display: flex;
   justify-content: flex-end;
   width: 58vw;
 }
 @media screen and (max-width: 500px) {
-  .about-header .logo {
+  .about-header .home-icon {
     justify-content: center;
   }
 }
-.about-header .logo img {
+.about-header .home-icon img {
   height: 8rem;
 }
 @media screen and (max-width: 500px) {
-  .about-header .logo img {
+  .about-header .home-icon img {
     margin-top: 3rem;
   }
 }
@@ -290,11 +294,11 @@ header {
   }
 }
 .dropdown .about-us button {
-  width: 13rem;
   font-size: 2rem;
   color: #333333;
   font-weight: 900;
   margin-right: 5rem;
+  width: 13rem;
   background: #d88300;
   border: 1.25px solid black;
   border-radius: 0.8rem;
@@ -304,11 +308,6 @@ header {
     font-weight: 600;
     margin: 0;
   }
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
@@ -322,7 +321,6 @@ header {
   width: 100vw;
   margin: 59rem 0 0 10rem;
   padding: 5rem 5rem;
-  min-height: auto;
   background: #333333;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container {
@@ -466,18 +464,23 @@ header {
     margin: 216rem 0 0;
   }
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
 .hn-info {
-  height: 16.5rem;
-  width: 49rem;
   font-size: 2rem;
   text-align: center;
+  height: 16.5rem;
+  width: 49rem;
   margin: 10vh auto 0 auto;
 }
 @media screen and (max-width: 500px) {
   .hn-info {
+    font-size: 2rem;
     height: 20rem;
     width: 80vw;
-    font-size: 2rem;
     margin: 5vh 0 10vh 0;
   }
 }
@@ -622,45 +625,82 @@ header {
   text-align: center;
   box-shadow: 0 0 6rem 0.5rem #AAA;
   border-radius: 1rem;
-  width: 62rem;
+  width: 35vw;
   height: 33rem;
   margin: 0 auto;
   padding: 1rem 1rem;
   background-image: url("../img/white-textureb.png");
 }
+@media screen and (max-width: 500px) {
+  .wrapper .form {
+    width: 70vw;
+    transform: translateX(-25%);
+  }
+}
 .name {
   background-color: #333333;
   border-bottom: 0.5rem solid #111111;
   color: white;
-  width: 30rem;
+  height: 4rem;
+  width: 16vw;
+}
+@media screen and (max-width: 500px) {
+  .name {
+    width: 32vw;
+  }
 }
 .name:hover {
   background-color: #d88300;
   border-bottom: 0.5rem solid #965a00;
-  width: 60rem;
+  width: 32vw;
+}
+@media screen and (max-width: 500px) {
+  .name:hover {
+    width: 64vw;
+  }
 }
 .email {
   background-color: #d88300;
   border-bottom: 0.5rem solid #965a00;
-  height: 5rem;
-  width: 30rem;
+  height: 4rem;
+  width: 16vw;
+}
+@media screen and (max-width: 500px) {
+  .email {
+    width: 32vw;
+  }
 }
 .email:hover {
   background-color: #333333;
   border-bottom: 0.5rem solid #111111;
-  width: 60rem;
+  width: 32vw;
+}
+@media screen and (max-width: 500px) {
+  .email:hover {
+    width: 64vw;
+  }
 }
 .message {
   background-color: #333333;
   border-bottom: 0.5rem solid #111111;
   overflow: hidden;
-  height: 10rem;
-  width: 30rem;
+  height: 11rem;
+  width: 16vw;
+}
+@media screen and (max-width: 500px) {
+  .message {
+    width: 32vw;
+  }
 }
 .message:hover {
   background-color: #d88300;
   border-bottom: 0.5rem solid #965a00;
-  width: 60rem;
+  width: 32vw;
+}
+@media screen and (max-width: 500px) {
+  .message:hover {
+    width: 64vw;
+  }
 }
 .submit {
   border-radius: 0.5rem;
@@ -679,16 +719,7 @@ header {
   border-radius: 0.5rem;
   border: none;
   transition: all 0.5s ease 0s;
-  box-shadow: 0 0 1.5rem 0.2rem #AAA;
-}
-.shadow {
-  box-shadow: 0 0 6rem 0.5rem #AAA;
-  opacity: 0.5;
-  border-radius: 10rem;
-  width: 50%;
-  margin: 5rem auto 0 auto;
-  padding: 0 2rem;
-  animation: shadow 1.5s infinite;
+  box-shadow: 0 0 2rem 0.2rem #AAA;
 }
 .submit {
   border-radius: 0.5rem;
@@ -699,12 +730,6 @@ header {
   border-bottom: 0.5rem solid #965a00;
   margin-top: 15rem;
 }
-@keyframes shadow {
-  50% {
-    opacity: 0.8;
-    width: 50%;
-  }
-}
 ::-webkit-input-placeholder {
   color: white;
   font-size: 2rem;
@@ -712,7 +737,7 @@ header {
 footer {
   background-image: url("../img/white-textureb.png");
   height: 8vh;
-  width: 100vw;
+  width: 100%;
 }
 @media screen and (max-width: 500px) {
   footer {
