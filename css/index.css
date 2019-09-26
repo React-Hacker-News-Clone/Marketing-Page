@@ -521,7 +521,22 @@ header {
   position: absolute;
   z-index: 1;
 }
-.hn-info {
+.window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 9.6rem;
+  width: 47.6rem;
+  margin: 10vh auto 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  .window {
+    transform: translateY(4rem);
+    margin-left: 5rem;
+  }
+}
+.window .hn-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -533,9 +548,10 @@ header {
   width: 49rem;
   margin: 10vh auto 0 auto;
   border: 5px solid black;
+  z-index: -1;
 }
 @media screen and (max-width: 500px) {
-  .hn-info {
+  .window .hn-info {
     font-size: 2rem;
     height: 20rem;
     width: 80vw;
@@ -543,13 +559,17 @@ header {
     border: none;
   }
 }
-.hn-info h2 {
+.window .hn-info h2 {
   background-color: #14bbdc;
   height: 6rem;
   padding: 0.75rem;
   position: relative;
 }
-.hn-info h2 #close {
+.window .hn-info h2 #check {
+  height: 3.3rem;
+  width: 3.3rem;
+}
+.window .hn-info h2 #close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -562,7 +582,7 @@ header {
   margin: 0.25rem 0.25rem 0 0;
   background-color: #b40000;
 }
-.hn-info p {
+.window .hn-info p {
   background-color: #e4e4e4;
   padding: 0.75rem;
 }
@@ -572,6 +592,7 @@ header {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 10rem 0;
+  transform: translateY(10rem);
 }
 @media screen and (max-width: 500px) {
   .team {
@@ -704,6 +725,16 @@ header {
   .odd-num .personal-content p {
     text-align: end;
   }
+}
+input[type=checkbox]:checked ~ .hn-info {
+  visibility: hidden;
+}
+input[type=checkbox] {
+  opacity: 0;
+  transform: scale(2.5);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .wrapper {
   width: 100vw;
